@@ -1,7 +1,7 @@
 # Formal Verification of Single-Track Tram Systems
 
 ## Description
-TrainSafe is a formal modeling project that uses Event-B and the Rodin platform to develop and verify a safety-critical control system for trams on single-track networks. The model employs stepwise refinement to progressively build a provably correct system for traffic management, collision avoidance, and passenger information.
+This project is a formal modeling project that uses Event-B and the Rodin platform to develop and verify a safety-critical control system for trams on single-track networks. The model employs stepwise refinement to progressively build a provably correct system for traffic management, collision avoidance, and passenger information.
 
 ## Development Approach
 1. **Initial model**  
