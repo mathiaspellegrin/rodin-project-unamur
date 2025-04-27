@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="14">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poIdentifier name="STATIONS" org.eventb.core.type="ℙ(STATIONS)"/>
+        <org.eventb.core.poIdentifier name="DIRECTION" org.eventb.core.type="ℙ(DIRECTION)"/>
+        <org.eventb.core.poIdentifier name="SENSOR_STATE" org.eventb.core.type="ℙ(SENSOR_STATE)"/>
+        <org.eventb.core.poIdentifier name="SWITCH_STATE" org.eventb.core.type="ℙ(SWITCH_STATE)"/>
+        <org.eventb.core.poIdentifier name="STATION_TYPE" org.eventb.core.type="ℙ(STATION_TYPE)"/>
+        <org.eventb.core.poIdentifier name="LIGHT_STATE" org.eventb.core.type="ℙ(LIGHT_STATE)"/>
+        <org.eventb.core.poIdentifier name="TRAMS" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.poIdentifier name="REQUEST_STATE" org.eventb.core.type="ℙ(REQUEST_STATE)"/>
+        <org.eventb.core.poIdentifier name="EMERGENCY_STATE" org.eventb.core.type="ℙ(EMERGENCY_STATE)"/>
+        <org.eventb.core.poIdentifier name="DENIED" org.eventb.core.type="REQUEST_STATE"/>
+        <org.eventb.core.poIdentifier name="correct" org.eventb.core.type="SWITCH_STATE"/>
+        <org.eventb.core.poIdentifier name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.poIdentifier name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.poIdentifier name="NORMAL" org.eventb.core.type="EMERGENCY_STATE"/>
+        <org.eventb.core.poIdentifier name="initial_station" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.poIdentifier name="ACTIVE" org.eventb.core.type="SENSOR_STATE"/>
+        <org.eventb.core.poIdentifier name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.poIdentifier name="EMERGENCY" org.eventb.core.type="EMERGENCY_STATE"/>
+        <org.eventb.core.poIdentifier name="GREEN" org.eventb.core.type="LIGHT_STATE"/>
+        <org.eventb.core.poIdentifier name="APPROVED" org.eventb.core.type="REQUEST_STATE"/>
+        <org.eventb.core.poIdentifier name="incorrect" org.eventb.core.type="SWITCH_STATE"/>
+        <org.eventb.core.poIdentifier name="RED" org.eventb.core.type="LIGHT_STATE"/>
+        <org.eventb.core.poIdentifier name="INACTIVE" org.eventb.core.type="SENSOR_STATE"/>
+        <org.eventb.core.poIdentifier name="FORWARD" org.eventb.core.type="DIRECTION"/>
+        <org.eventb.core.poIdentifier name="BACKWARD" org.eventb.core.type="DIRECTION"/>
+        <org.eventb.core.poIdentifier name="PENDING" org.eventb.core.type="REQUEST_STATE"/>
+        <org.eventb.core.poIdentifier name="network" org.eventb.core.type="ℙ(STATIONS×STATIONS)"/>
+        <org.eventb.core.poPredicate name="initial_statioo" org.eventb.core.predicate="finite(STATIONS)" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poPredicate name="initial_statiop" org.eventb.core.predicate="finite(TRAMS)" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="initial_statioq" org.eventb.core.predicate="initial_station∈STATIONS" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="initial_statior" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#1"/>
+        <org.eventb.core.poPredicate name="initial_statios" org.eventb.core.predicate="station_type∈STATIONS → STATION_TYPE" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#2"/>
+        <org.eventb.core.poPredicate name="initial_statiot" org.eventb.core.predicate="partition(SWITCH_STATE,{correct},{incorrect})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#23"/>
+        <org.eventb.core.poPredicate name="initial_statiou" org.eventb.core.predicate="partition(LIGHT_STATE,{RED},{GREEN})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#24"/>
+        <org.eventb.core.poPredicate name="initial_statiov" org.eventb.core.predicate="partition(SENSOR_STATE,{ACTIVE},{INACTIVE})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#25"/>
+        <org.eventb.core.poPredicate name="initial_statiow" org.eventb.core.predicate="partition(DIRECTION,{FORWARD},{BACKWARD})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#26"/>
+        <org.eventb.core.poPredicate name="initial_statiox" org.eventb.core.predicate="partition(REQUEST_STATE,{PENDING},{APPROVED},{DENIED})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#27"/>
+        <org.eventb.core.poPredicate name="initial_statioy" org.eventb.core.predicate="partition(EMERGENCY_STATE,{EMERGENCY},{NORMAL})" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#28"/>
+        <org.eventb.core.poPredicate name="initial_statioz" org.eventb.core.predicate="network∈STATIONS ↔ STATIONS" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#29"/>
+        <org.eventb.core.poPredicate name="initial_statio{" org.eventb.core.predicate="∀s1⦂STATIONS,s2⦂STATIONS·s1∈STATIONS∧s2∈STATIONS∧s1 ↦ s2∈network⇒s2 ↦ s1∈network" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#30"/>
+        <org.eventb.core.poPredicate name="initial_statio|" org.eventb.core.predicate="∀s⦂STATIONS·s∈STATIONS⇒s ↦ s∉network" org.eventb.core.source="/TramProject/contexteinit.buc|org.eventb.core.contextFile#contexteinit|org.eventb.core.axiom#31"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poIdentifier name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.poIdentifier name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTALLHYPcontexteiniw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(TRAMS×STATIONS))∈(∅ ⦂ ℙ(TRAMS)) → STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcontexteiniw" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poIdentifier name="trams'" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.poIdentifier name="position'" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcontexteiniw" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTIDENTcontexteiniw" org.eventb.core.poStamp="14"/>
+    <org.eventb.core.poSequent name="MOVE_TRAM/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTHYPcontexteinix("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t∈dom(position)∧position∈TRAMS ⇸ STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTHYPcontexteinix("/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="MOVE_TRAM/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTALLHYPcontexteinix"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="position{t ↦ p}∈trams → STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poSequent#MOVE_TRAM\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcontexteinix" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.poIdentifier name="position'" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPcontexteinix(" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTIDENTcontexteinix" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="t∈trams" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcontexteinix" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTHYPcontexteinix(" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(t)≠p" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ADD_TRAM/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTALLHYPcontexteiniy"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="position{t ↦ p}∈trams∪{t} → STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poSequent#ADD_TRAM\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcontexteiniy" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poIdentifier name="trams'" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.poIdentifier name="position'" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcontexteiniy" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#EVTIDENTcontexteiniy" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="t∈TRAMS∧t∉trams" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#-|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.event#-|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TramProject/machineinitiale.bpo|org.eventb.core.poFile#machineinitiale|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="14">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="trams⊆TRAMS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="position∈trams → STATIONS" org.eventb.core.source="/TramProject/machineinitiale.bum|org.eventb.core.machineFile#machineinitiale|org.eventb.core.invariant#+"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
