@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="STATIONS,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="STATION_TYPE" org.eventb.core.type="ℙ(STATION_TYPE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="STATION_TYPE" org.eventb.core.type="ℙ(STATION_TYPE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(TRAMS×STATIONS))∈(∅ ⦂ ℙ(TRAMS)) → STATIONS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="STATION_TYPE" org.eventb.core.type="ℙ(STATION_TYPE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MOVE_TRAM/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p5,p9,p6,p7,p4,p2,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.prIdent name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.prIdent name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+        <org.eventb.core.prIdent name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.prIdent name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="position(t)≠p"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒⊤"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="initial_station∈STATIONS">
+            <org.eventb.core.prIdent name="initial_station" org.eventb.core.type="STATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="t∈trams"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(STATIONS)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="position∈TRAMS ⇸ STATIONS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒station_type(position(t))∈STATION_TYPE"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬position(t)=p"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="trams⊆TRAMS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="p∈STATIONS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="t∈dom(position)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="finite(TRAMS)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="position∈trams → STATIONS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="position{t ↦ p}∈trams → STATIONS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="station_type∈STATIONS → STATION_TYPE"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_TRAM/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p4,p5,p7">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        <org.eventb.core.prIdent name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.prIdent name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+        <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.prIdent name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="t∈TRAMS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="t∈TRAMS∧t∉trams"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="trams⊆TRAMS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈STATIONS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="initial_station∈STATIONS">
+            <org.eventb.core.prIdent name="initial_station" org.eventb.core.type="STATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="position∈trams → STATIONS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="position{t ↦ p}∈trams∪{t} → STATIONS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬t∈trams"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="t" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees t)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                                <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p9">
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p9"/>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p12">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p1"/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p13">
+                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for position(t)" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p14">
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                                                                        <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps=""/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e1"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p16">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p2"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+        <org.eventb.core.prIdent name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.prIdent name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="position(t)∈STATIONS">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒t∈dom(position)∧position∈TRAMS ⇸ STATIONS∧position(t)∈dom(station_type)∧station_type∈STATIONS ⇸ STATION_TYPE"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="initial_station∈STATIONS">
+            <org.eventb.core.prIdent name="initial_station" org.eventb.core.type="STATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="t∈trams⇒t∈dom(position)∧position∈TRAMS ⇸ STATIONS∧position(t)∈dom(station_type)∧station_type∈STATIONS ⇸ STATION_TYPE">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="t∈trams">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="station_type∈STATIONS ⇸ STATION_TYPE"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="position∈TRAMS ⇸ STATIONS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="trams⊆TRAMS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="t∈dom(position)∧position∈TRAMS ⇸ STATIONS∧position(t)∈dom(station_type)∧station_type∈STATIONS ⇸ STATION_TYPE">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="t∈dom(position)">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="position∈trams → STATIONS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="position(t)∈dom(station_type)">
+            <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="station_type∈STATIONS → STATION_TYPE"/>
+        <org.eventb.core.prExpr name="e1" org.eventb.core.expression="STATIONS"/>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="trams"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.funImgGoal"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀t⦂TRAMS·t∈(∅ ⦂ ℙ(TRAMS))⇒station_type((∅ ⦂ ℙ(TRAMS×STATIONS))(t))∈STATION_TYPE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MOVE_TRAM/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p9"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.prIdent name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+        <org.eventb.core.prIdent name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.prIdent name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒station_type(position(t))∈STATION_TYPE"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="position(t)≠p"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬position(t)=p"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="trams⊆TRAMS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="p∈STATIONS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="initial_station∈STATIONS">
+            <org.eventb.core.prIdent name="initial_station" org.eventb.core.type="STATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀t0⦂TRAMS·t0∈trams⇒station_type((position{t ↦ p})(t0))∈STATION_TYPE"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_TRAM/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="STATIONS,STATION_TYPE,TRAMS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="p" org.eventb.core.type="STATIONS"/>
+        <org.eventb.core.prIdent name="position" org.eventb.core.type="ℙ(TRAMS×STATIONS)"/>
+        <org.eventb.core.prIdent name="station_type" org.eventb.core.type="ℙ(STATIONS×STATION_TYPE)"/>
+        <org.eventb.core.prIdent name="t" org.eventb.core.type="TRAMS"/>
+        <org.eventb.core.prIdent name="trams" org.eventb.core.type="ℙ(TRAMS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATION_TYPE,{PRINCIPAL},{SECONDAIRE})">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATION_TYPE={PRINCIPAL,SECONDAIRE}">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="t∈TRAMS∧t∉trams"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="initial_station∈STATIONS">
+            <org.eventb.core.prIdent name="initial_station" org.eventb.core.type="STATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀t0⦂TRAMS·t0∈trams∪{t}⇒⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀t0⦂TRAMS·t0∈trams∪{t}⇒station_type((position{t ↦ p})(t0))∈STATION_TYPE"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="t∈TRAMS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀t⦂TRAMS·t∈trams⇒station_type(position(t))∈STATION_TYPE"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="trams⊆TRAMS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="p∈STATIONS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PRINCIPAL=SECONDAIRE">
+            <org.eventb.core.prIdent name="PRINCIPAL" org.eventb.core.type="STATION_TYPE"/>
+            <org.eventb.core.prIdent name="SECONDAIRE" org.eventb.core.type="STATION_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬t∈trams"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>
