@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="machineinitiale"/>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="trams"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="position"/>
+    <org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="trams ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="position ≔ ∅" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MOVE_TRAM">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MOVE_TRAM"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ADD_TRAM">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ADD_TRAM"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="-" org.eventb.core.target="contexteinit"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv1" org.eventb.core.predicate="trams ⊆ TRAMS"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="inv2" org.eventb.core.predicate="position ∈ trams →STATIONS"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.comment="//on s'asure que chaque station est bien typée" org.eventb.core.label="inv3" org.eventb.core.predicate="∀ t · t ∈ trams ⇒ station_type(position(t)) ∈ STATION_TYPE "/>
+</org.eventb.core.machineFile>
