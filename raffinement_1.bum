@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="P1_1 ≔ TRUE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="P1_2 ≔ FALSE" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="P1_3 ≔ TRUE" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_4 ≔ FALSE" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_1 ≔ FALSE" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="P2_2 ≔ FALSE" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="P2_3 ≔ FALSE" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="P2_4 ≔ FALSE" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="S1_1 ≔ FALSE" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="S1_2 ≔ FALSE" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="S2_1 ≔ FALSE" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="S2_2 ≔ FALSE" org.eventb.core.label="act12"/>
+        <org.eventb.core.action name="3" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act13"/>
+        <org.eventb.core.action name="4" org.eventb.core.assignment="E2 ≔ FALSE" org.eventb.core.label="act14"/>
+        <org.eventb.core.action name="5" org.eventb.core.assignment="E3 ≔ FALSE" org.eventb.core.label="act15"/>
+        <org.eventb.core.action name="6" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act16"/>
+        <org.eventb.core.action name="7" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act17"/>
+        <org.eventb.core.action name="8" org.eventb.core.assignment="E6 ≔ FALSE" org.eventb.core.label="act18"/>
+        <org.eventb.core.action name="9" org.eventb.core.assignment="E7 ≔ FALSE" org.eventb.core.label="act19"/>
+        <org.eventb.core.action name=":" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act20"/>
+        <org.eventb.core.action name=";" org.eventb.core.assignment="AG1 ≔ 1" org.eventb.core.label="act21"/>
+        <org.eventb.core.action name="=" org.eventb.core.assignment="AG2 ≔ 1" org.eventb.core.label="act22"/>
+        <org.eventb.core.action name="&gt;" org.eventb.core.assignment="AG3 ≔ 1" org.eventb.core.label="act23"/>
+        <org.eventb.core.action name="?" org.eventb.core.assignment="AG4 ≔ 1" org.eventb.core.label="act24"/>
+        <org.eventb.core.action name="@" org.eventb.core.assignment="AG5 ≔ 1" org.eventb.core.label="act25"/>
+        <org.eventb.core.action name="A" org.eventb.core.assignment="AG6 ≔ 1" org.eventb.core.label="act26"/>
+        <org.eventb.core.action name="B" org.eventb.core.assignment="AG7 ≔ 1" org.eventb.core.label="act27"/>
+        <org.eventb.core.action name="C" org.eventb.core.assignment="AG8 ≔ 1" org.eventb.core.label="act28"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="(" org.eventb.core.comment="Station Principale numéro 1" org.eventb.core.identifier="P1_1"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="P1_2"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="P1_3"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="P1_4"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv1" org.eventb.core.predicate="P1_1 ∈ BOOL ∧ P1_2 ∈ BOOL ∧ P1_3 ∈ BOOL ∧ P1_4 ∈ BOOL"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv2" org.eventb.core.predicate="P2_1 ∈ BOOL ∧ P2_2 ∈ BOOL ∧ P2_3 ∈ BOOL ∧ P2_4 ∈ BOOL"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv3" org.eventb.core.predicate="S1_1 ∈ BOOL ∧ S1_2 ∈ BOOL"/>
+    <org.eventb.core.variable name="4" org.eventb.core.comment="Station Principale numéro 2" org.eventb.core.identifier="P2_1"/>
+    <org.eventb.core.variable name="7" org.eventb.core.identifier="P2_2"/>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="P2_3"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="P2_4"/>
+    <org.eventb.core.variable name=":" org.eventb.core.comment="Station Secondaire numéro 1" org.eventb.core.identifier="S1_1"/>
+    <org.eventb.core.variable name=";" org.eventb.core.identifier="S1_2"/>
+    <org.eventb.core.variable name="=" org.eventb.core.comment="Station Secondaire numéro 2" org.eventb.core.identifier="S2_1"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="S2_2"/>
+    <org.eventb.core.variable name="?" org.eventb.core.comment="Slots entre les stations" org.eventb.core.identifier="E1"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="E2"/>
+    <org.eventb.core.variable name="A" org.eventb.core.identifier="E3"/>
+    <org.eventb.core.variable name="B" org.eventb.core.identifier="E4"/>
+    <org.eventb.core.variable name="C" org.eventb.core.identifier="E5"/>
+    <org.eventb.core.variable name="D" org.eventb.core.identifier="E6"/>
+    <org.eventb.core.variable name="E" org.eventb.core.identifier="E7"/>
+    <org.eventb.core.variable name="F" org.eventb.core.identifier="E8"/>
+    <org.eventb.core.invariant name="G" org.eventb.core.label="inv4" org.eventb.core.predicate="S2_1 ∈ BOOL ∧ S2_2 ∈ BOOL"/>
+    <org.eventb.core.invariant name="H" org.eventb.core.label="inv5" org.eventb.core.predicate="E1 ∈ BOOL ∧ E2 ∈ BOOL ∧ E3 ∈ BOOL ∧ E4 ∈ BOOL ∧ E5 ∈ BOOL ∧ E6 ∈ BOOL ∧ E7 ∈ BOOL ∧ E8 ∈ BOOL"/>
+    <org.eventb.core.variable name="I" org.eventb.core.comment="Aiguillages" org.eventb.core.identifier="AG1"/>
+    <org.eventb.core.variable name="J" org.eventb.core.identifier="AG2"/>
+    <org.eventb.core.variable name="K" org.eventb.core.identifier="AG3"/>
+    <org.eventb.core.variable name="L" org.eventb.core.identifier="AG4"/>
+    <org.eventb.core.variable name="M" org.eventb.core.identifier="AG5"/>
+    <org.eventb.core.variable name="N" org.eventb.core.identifier="AG6"/>
+    <org.eventb.core.variable name="O" org.eventb.core.identifier="AG7"/>
+    <org.eventb.core.variable name="P" org.eventb.core.identifier="AG8"/>
+    <org.eventb.core.invariant name="Q" org.eventb.core.comment="Aiguillages des Stations Principales" org.eventb.core.label="inv6" org.eventb.core.predicate="AG1 ∈ {1, 2, 3, 4} ∧ AG2 ∈ {1, 2, 3, 4} ∧ AG5 ∈ {1, 2, 3, 4} ∧ AG6 ∈ {1, 2, 3, 4}"/>
+    <org.eventb.core.invariant name="R" org.eventb.core.comment="Aiguillages des Stations Secondaires" org.eventb.core.label="inv7" org.eventb.core.predicate="AG3 ∈ {1, 2} ∧ AG4 ∈ {1, 2} ∧ AG7 ∈ {1, 2} ∧ AG8 ∈ {1, 2}"/>
+    <org.eventb.core.event name="S" org.eventb.core.comment="Exit Primariy (Station) N°1 slot 1 to E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_1_to_E1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="T" org.eventb.core.comment="exit Primariy N°1 slot 2 to E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_2_to_E1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="U" org.eventb.core.comment="exit Primariy N°1 slot 3 to E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_3_to_E1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E1 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="P1_3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E1 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="V" org.eventb.core.comment="exit Primariy N°1 slot 4 to E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_4_to_E1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_4 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="W" org.eventb.core.comment="exit Primariy N°1 slot 1 to E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_1_to_E8">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E8 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E8 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="X" org.eventb.core.comment="exit Primariy N°1 slot 2 to E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_2_to_E8">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E8 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E8 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="Y" org.eventb.core.comment="exit Primariy N°1 slot 3 to E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_3_to_E8">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E8 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E8 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="Z" org.eventb.core.comment="exit Primariy N°1 slot 4 to E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P1_4_to_E8">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P1_4 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E8 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P1_4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E8 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="[" org.eventb.core.comment="add switch n°1 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG1_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG1 &lt; 4"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG1 ≔ AG1 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="\" org.eventb.core.comment="sub switch n°1 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG1_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG1 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG1 ≔ AG1 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="]" org.eventb.core.comment="add switch n°2 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG2_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG2 &lt; 4"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG2 ≔ AG2 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="^" org.eventb.core.comment="sub switch n°2 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG2_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG2 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG2 ≔ AG2 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_" org.eventb.core.comment="move between two stations (here: between P1 and S1)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E1_to_E2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E2 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="`" org.eventb.core.comment="move between two stations (here: between P1 and S2)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E8_to_E7">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E8 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E7 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E7 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="a" org.eventb.core.comment="move between two stations (here: between P1 and S1)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E2_to_E1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E2 = TRUE"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E1 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E1 = FALSE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="b" org.eventb.core.comment="move between two stations (here: between P1 and S2)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E7_to_E8">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E7 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E8 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E7 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E8 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="c" org.eventb.core.comment="enter P1 slot 1 from E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E1_to_P1_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="d" org.eventb.core.comment="enter P1 slot 2 from E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E1_to_P1_2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="e" org.eventb.core.comment="enter P1 slot 3 from E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E1_to_P1_3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_3 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="f" org.eventb.core.comment="enter P1 slot 4 from E1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E1_to_P1_4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_4 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG2 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="g" org.eventb.core.comment="enter P1 slot 1 from E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E8_to_P1_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E8 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="h" org.eventb.core.comment="enter P1 slot 2 from E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E8_to_P1_2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E8 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="i" org.eventb.core.comment="enter P1 slot 3 from E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E8_to_P1_3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E8 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_3 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="j" org.eventb.core.comment="enter P1 slot 4 from E8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E8_to_P1_4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E8 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P1_4 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG1 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E8 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P1_4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="k" org.eventb.core.comment="add switch n°3 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG3_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG3 &lt; 2"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG3 ≔ AG3 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="l" org.eventb.core.comment="sub switch n°3 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG3_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG3 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG3 ≔ AG3 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="m" org.eventb.core.comment="add switch n°4 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG4_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG4 &lt; 2"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG4 ≔ AG4 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="n" org.eventb.core.comment="sub switch n°4 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG4_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG4 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG4 ≔ AG4 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="o" org.eventb.core.comment="add switch n°7 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG7_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG7 &lt; 2"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG7 ≔ AG7 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="p" org.eventb.core.comment="sub switch n°7 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG7_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG7 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG7 ≔ AG7 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="q" org.eventb.core.comment="add switch n°8 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG8_ADD">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="AG8 ≔ AG8 + 1" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="AG8 &lt; 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="r" org.eventb.core.comment="sub switch n°8 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG8_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG8 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG8 ≔ AG8 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="s" org.eventb.core.comment="add switch n°5 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG5_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG5 &lt; 4"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG5 ≔ AG5 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="t" org.eventb.core.comment="sub switch n°5 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG5_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG5 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG5 ≔ AG5 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="u" org.eventb.core.comment="add switch n°6 state number +1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG6_ADD">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG6 &lt; 4"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG6 ≔ AG6 + 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="v" org.eventb.core.comment="sub switch n°6 state number -1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AG6_SUB">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="AG6 &gt; 1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="AG6 ≔ AG6 − 1" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="w" org.eventb.core.comment="move between two stations (here: between P2 and S1)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E3_to_E4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E4 = FALSE" org.eventb.core.theorem="true"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="x" org.eventb.core.comment="move between two stations (here: between P2 and S1)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E4_to_E3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E4 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E3 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="y" org.eventb.core.comment="move between two stations (here: between P2 and S2)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E5_to_E6">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E5 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E6 = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E6 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="z" org.eventb.core.comment="move between two stations (here: between P2 and S2)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E6_to_E5">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E6 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E5 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E6 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E5 = FALSE"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="{" org.eventb.core.comment="enter Secondary N°1 slot 1 from E2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E2_to_S1_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="S1_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG3 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="S1_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="|" org.eventb.core.comment="enter Secondary N°1 slot 2 from E2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E2_to_S1_2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="S1_2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG3 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="S1_2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="}" org.eventb.core.comment="exit Secondary N°1 to E2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S1_1_to_E2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="S1_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG3 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="S1_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="~" org.eventb.core.comment="exit Secondary N°1 to E2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S1_2_to_E2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="S1_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG3 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="S1_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="''" org.eventb.core.comment="enter Secondary N°1 slot 1 from E3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E3_to_S1_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="S1_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG4 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="S1_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'(" org.eventb.core.comment="enter Secondary N°1 slot 2 from E3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E3_to_S1_2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="S1_2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG4 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="S1_2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="')" org.eventb.core.comment="exit Secondary N°1 to E3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S1_1_to_E3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="S1_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E3 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG4 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="S1_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'*" org.eventb.core.comment="exit Secondary N°1 to E3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S1_2_to_E3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="S1_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E3 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG4 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="S1_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'+" org.eventb.core.comment="enter Secondary N°2 slot 1 from E6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E6_to_S2_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E6 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="S2_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG7 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E6 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="S2_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'," org.eventb.core.comment="enter Secondary N°2 slot 2 from E6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E6_to_S2_2">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E6 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="S2_2 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E6 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="S2_2 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG7 = 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'-" org.eventb.core.comment="exit Secondary N°1 to E6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S2_1_to_E6">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="S2_1 = TRUE"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="S2_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="E6 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E6 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG7 = 1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'." org.eventb.core.comment="exit Secondary N°1 to E6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S2_2_to_E6">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="S2_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E6 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="S2_2 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E6 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG7 = 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'/" org.eventb.core.comment="enter Secondary N°2 slot 1 from E7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E7_to_S2_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E7 = TRUE"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E7 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="S2_1 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="S2_1 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG8 = 1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'0" org.eventb.core.comment="enter Secondary N°2 slot 2 from E7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E7_to_S2_2">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E7 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="S2_2 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E7 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="S2_2 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG8 = 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'1" org.eventb.core.comment="exit Secondary N°1 to E7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S2_1_to_E7">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="S2_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E7 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="S2_1 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E7 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG8 = 1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'2" org.eventb.core.comment="exit Secondary N°1 to E7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_S2_2_to_E7">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="S2_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E7 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="S2_2 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E7 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG8 = 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'3" org.eventb.core.comment="exit P2 slot 1 to E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_1_to_E5">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E5 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E5 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'4" org.eventb.core.comment="exit P2 slot 2 to E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_2_to_E5">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E5 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E5 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'5" org.eventb.core.comment="exit P2 slot 3 to E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_3_to_E5">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_3 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E5 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E5 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'6" org.eventb.core.comment="exit P2 slot 4 to E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_4_to_E5">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_4 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E5 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E5 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'7" org.eventb.core.comment="enter P2 slot 1 from E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E5_to_P2_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E5 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'8" org.eventb.core.comment="enter P2 slot 2 from E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E5_to_P2_2">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E5 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_2 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_2 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'9" org.eventb.core.comment="enter P2 slot 3 from E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E5_to_P2_3">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E5 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_3 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_3 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="':" org.eventb.core.comment="enter P2 slot 4 from E5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E5_to_P2_4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E5 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_4 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG6 = 4"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E5 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="';" org.eventb.core.comment="exit P2 slot 1 to E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_1_to_E4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_1 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E4 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_1 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'=" org.eventb.core.comment="exit P2 slot 2 to E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_2_to_E4">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_2 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="E4 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="P2_2 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="E4 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'&gt;" org.eventb.core.comment="exit P2 slot 3 to E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_3_to_E4">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="P2_3 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E4 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_3 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E4 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'?" org.eventb.core.comment="exit P2 slot 4 to E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_P2_4_to_E4">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="P2_4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="E4 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="P2_4 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="E4 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'@" org.eventb.core.comment="enter P2 slot 1 from E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E4_to_P2_1">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="E4 = TRUE"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_1 = FALSE"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="P2_1 ≔ TRUE" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'A" org.eventb.core.comment="enter P2 slot 2 from E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E4_to_P2_2">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="P2_2 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E4 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_2 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'B" org.eventb.core.comment="enter P2 slot 3 from E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E4_to_P2_3">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="P2_3 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E4 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_3 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="'C" org.eventb.core.comment="enter P2 slot 4 from E4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="move_E4_to_P2_4">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="E4 ≔ FALSE" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="P2_4 ≔ TRUE" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="E4 = TRUE"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="P2_4 = FALSE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="AG5 = 4"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
